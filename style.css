@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('/assets/fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#mainDiv {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+}
+
+/* left container */
+
+#leftMain {
+    margin: 120px 0;
+    background-image: url("background_pic.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    width: 35vw;
+    color: white;
+}
+
+#logoDiv {
+    background-color: rgba(0, 0, 0, .5);
+    height: 10vh;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#logo {
+    max-height: 9vh;
+}
+
+#odinLogo {
+    max-height: 9vh;
+    margin: auto;
+}
+
+#odin {
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 35px;
+    margin: auto 0;
+}
+
+/* right container */
+
+#rightMain {
+    margin: 120px 0;
+    background-color: white;
+    height: 75vh;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+p, h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+p {
+    margin: 15px 25px;
+    /* vertical-align: text-bottom; */
+}
+
+form {
+    margin: auto 25px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 10px;
+}
+
+.form_field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+#topRight, #bottomRight {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#topRight {
+    justify-content: flex-end;
+}
+
+#bottomRight {
+    justify-content: flex-start;
+    margin-left: 25px;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #596D48;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    width: 150px;
+    color: white;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+input:invalid {
+    border: 2px solid red;
+}

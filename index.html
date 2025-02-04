@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Odin Form</title>
+    </head>
+    <body>
+        <div id="mainDiv">
+            <div id="leftMain">
+                <div id="logoDiv">
+                    <div id="logo">
+                        <img src="odin_logo.png" id="odinLogo">
+                    </div>
+                    <div id="odin">
+                        <h2>ODIN</h2>
+                    </div>
+                </div>>
+            </div>
+            <div id="rightMain">                
+                <div id="topRight">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize
+                        your deepest dreams. Sign up now to get started.
+                    </p>
+                    <p>You know you want to.</p>
+                </div>
+                <form action="example.com/path" method="post">
+                    <h3>Let's do this!</h3>
+
+                    <div class="row">
+                        <div class="form_field">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" pattern="[A-Za-z\s]{2,}">
+                        </div>
+                        <div class="form_field">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" pattern="[A-Za-z\s]{2,}">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form_field">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form_field">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="number" id="phone_number" name="phone_number" pattern="\d{10}">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form_field">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required minlength="8">
+                        </div>
+                        <div class="form_field">
+                            <label for="password2">CONFIRM PASSWORD</label>
+                            <input type="password" id="password2" name="password2" required minlength="8">
+                        </div>
+                    </div>
+                </form>
+                <div id="bottomRight">
+                    <button type="submit" class="btn">Create Account</button>
+                    <h4>Already have an account? Log in</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
